@@ -1,3 +1,4 @@
+// CONDITION
 // 1) write map function (for example myMap) through the method reduce with types
 
 // function myMap(arr, callback) {
@@ -17,6 +18,7 @@
 
 // console.log(myMap([1, 2, 3, 4, 5], (el) => el * 2));
 
+// CONDITION
 // 2) write filter function (for example myFilter) through the method reduce with types
 
 // function myFilter(arr, callback) {
