@@ -1,6 +1,19 @@
 // CONDITION
 // should write a timer on react with using useState and useEffect
 
+// export default function App() {
+//
+
+//   return (
+//     <div>
+//       <h1>{seconds}</h1>
+
+//       <button onClick={() => {}}>Start</button>
+//       <button onClick={() => {}}>Stop</button>
+//     </div>
+//   );
+// }
+
 // SOLUTION
 // import { useEffect, useState } from "react";
 
