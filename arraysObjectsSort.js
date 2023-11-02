@@ -3,6 +3,8 @@
 
 // let words = ["banana", "grapefruit", "banana", "grapefruit", "banana", "orange", "banana"];
 
+// SOLUTION
+
 // const sortArr = Object.entries(
 //   words.reduce((acc, item) => {
 //     acc[item] = (acc[item] || 0) + 1;
