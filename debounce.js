@@ -1,7 +1,7 @@
+// CONDITION
+
 // Debounce on pure js
 // Should console only last 'fetching(3)'
-
-// CONDITION
 
 // function fetchUrl(url) {
 //     return console.log(`fetching ${url}`)
