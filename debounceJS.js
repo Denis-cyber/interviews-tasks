@@ -1,6 +1,6 @@
 // CONDITION
 
-// Debounce on pure js
+// Write your debounce on pure js
 // Should console only last 'fetching(3)'
 
 // function fetchUrl(url) {
