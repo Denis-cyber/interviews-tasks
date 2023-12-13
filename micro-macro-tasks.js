@@ -38,3 +38,35 @@ promise1.then(console.log);
 promise2.then(console.log);
 
 console.log(7);
+
+// TASK 3
+// CONDITION
+
+// In what order are the numbers displayed in the console?
+
+setTimeout(() => {
+  console.log("timeOut");
+}, 0);
+
+console.log(1);
+
+new Promise((resolve) => {
+  console.log("Promise");
+
+  setTimeout(() => {
+    console.log("777");
+    resolve();
+  }, 0);
+})
+  .then(() => {
+    console.log("then 1");
+  })
+  .then(() => {
+    console.log("then 2");
+  });
+
+console.log(4);
+
+setTimeout(() => {
+  console.log("timeOut2");
+}, 0);
