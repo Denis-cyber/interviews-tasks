@@ -26,3 +26,14 @@ vUnknown.method(); // Not ok; we don't know anything about this variable
 // function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
 //     return obj[key]
 // }
+
+// 3) What type will be in T1 and in T2
+
+// const a = {
+//     x: 1,
+//     y: '2'
+// }
+
+// type T1 = typeof a
+
+// type T2 = keyof T1
