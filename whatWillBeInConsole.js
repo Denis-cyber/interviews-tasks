@@ -17,3 +17,19 @@
 // console.log(o === a);
 // console.log(typeof o == typeof a);
 // console.log(typeof o === typeof a);
+
+// 3 CONDITION
+
+// function Constructor1() {}
+// var Constructor2 = function () {};
+// var Constructor3 = () => {};
+
+// console.log(new Constructor1());
+// console.log(new Constructor2());
+// console.log(new Constructor3());
+
+// SOLUTION
+
+// console.log(new Constructor1()); // OK // Constructor1 {}
+// console.log(new Constructor2()); // OK // Constructor2 {}
+// console.log(new Constructor3()); // TypeError // We can't use arrow func as a constructor
