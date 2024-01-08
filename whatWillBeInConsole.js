@@ -33,3 +33,10 @@
 // console.log(new Constructor1()); // OK // Constructor1 {}
 // console.log(new Constructor2()); // OK // Constructor2 {}
 // console.log(new Constructor3()); // TypeError // We can't use arrow func as a constructor
+
+// 4 CONDITION
+
+// function Constructor() {}
+// var o = new Constructor();
+
+// console.log(o.__proto__ === Constructor.prototype);
