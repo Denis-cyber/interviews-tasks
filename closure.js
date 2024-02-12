@@ -1,4 +1,69 @@
-// CONDITION
+// 1 CONDITION
+// What will be on console?
+
+// let x = 1;
+
+// const logToConsole = function () {
+//   console.log(x);
+// };
+
+// x = 2;
+
+// logToConsole();
+
+// x = 3;
+
+// SOLUTION 2
+
+// 2 CONDITION
+// What will be on console?
+
+// function makeCounter(count) {
+//   return function () {
+//     return count++;
+//   };
+// }
+
+// let counter = makeCounter(0);
+// let counter2 = makeCounter(0);
+
+// console.log(counter());
+// console.log(counter());
+
+// console.log(counter2());
+// console.log(counter2());
+
+// 3 CONDITION
+// What will be on console?
+
+// function createIncrement() {
+//   let count = 0;
+//   function increment() {
+//     count++;
+//   }
+
+//   let message = `Count is ${count}`;
+//   function log() {
+//     console.log(message);
+//   }
+
+//   return [increment, log];
+// }
+
+// const [increment, log] = createIncrement();
+// increment();
+// increment();
+// increment();
+// log();
+
+// SOLUTION Count is 0 Why? How to fix it?
+
+//   function log() {
+//     let message = `Count is ${count}`;
+//     console.log(message);
+//   }
+
+// 4 CONDITION
 
 // Write function sum that will summary args
 
