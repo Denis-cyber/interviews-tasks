@@ -10,7 +10,7 @@ function digitPermutation(arr) {
         const sortedItem = String(item).split('').sort().join('');
 
         if (!map.has(sortedItem)) {
-            map.set(sortedItem, value)
+            map.set(sortedItem, item)
         }
     }
 }
