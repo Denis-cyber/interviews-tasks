@@ -13,7 +13,7 @@ function digitPermutation(arr) {
             map.set(sortedItem, [])
         }
 
-        map.set(sortedItem, [... map.get(sortedItem), Number(item)])
+        map.get(sortedItem).push(Number(item));
     }
 
     return Array.from(map.values());
