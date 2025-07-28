@@ -10,9 +10,13 @@ function digitPermutation(arr) {
         const sortedItem = String(item).split('').sort().join('');
 
         if (!map.has(sortedItem)) {
-            map.set(sortedItem, item)
+            map.set(sortedItem, [])
         }
+
+        map.set(sortedItem, [... map.get(sortedItem), Number(item)])
     }
+
+    return Array.from(map.values());
 }
 
 digitPermutation(arrayExample);
