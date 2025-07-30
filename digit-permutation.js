@@ -4,9 +4,10 @@ const arrayExample = [1230, 199, 2301, 123, 110001, 3021, 101010, 991, 9];
 // [[199, 991], [110001, 101010], [1230, 2301, 1230, 3021], [9]];
 
 
+
 // solution with Map 
 
-function digitPermutation(arr) {
+function digitPermutationUseMap(arr) {
     const map = new Map();
 
     for (const item of arr) {
@@ -22,7 +23,27 @@ function digitPermutation(arr) {
     return Array.from(map.values());
 }
 
-digitPermutation(arrayExample);
+digitPermutationUseMap(arrayExample);
+
 
 
 // solution with {}
+
+function digitPermutationUseObject(arr) {
+    const obj = {}
+
+    for (const item of arr) {
+        const sortedItem = String(item).split('').sort().join('');
+
+        if(!obj[sortedItem]) {
+            obj[sortedItem] = [];
+        }
+
+        obj[sortedItem].push(Number(item));
+    }
+
+    return Object.values(obj);
+}
+
+
+digitPermutationUseObject(arrayExample);
