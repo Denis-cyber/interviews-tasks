@@ -38,3 +38,25 @@
 //     .map((item) => +item[0]);
 
 // console.log(checkRepeatNums(nums));
+
+
+
+// Solition of the Task 2 by Map
+
+// const taskTwoUseMap = (arrNums) => {
+//     const counts = new Map();
+    
+//     for (const num of arrNums) {
+//         counts.set(num, (counts.get(num) || 0) + 1)
+//     }
+    
+//     const repeatedNums = [];
+    
+//     for (const [num, amount] of counts) {
+//         if (amount > 1) repeatedNums.push(num);
+//     }
+    
+//     return repeatedNums;
+// }
+
+// console.log(taskTwoUseMap(nums));
