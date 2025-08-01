@@ -27,9 +27,7 @@
 //   let timer;
 
 //   return function (args) {
-//     if (timer) {
-//       clearTimeout(timer);
-//     }
+//     timer && clearTimeout(timer);
 
 //     timer = setTimeout(() => {
 //       callback(args);
