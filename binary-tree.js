@@ -67,3 +67,47 @@
 // }
 
 // console.log(getTreeValues(tree)); // => [1,2,3,4,5,6]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION (by recursion)
+
+
+// function getTreeValuesRecursive(node) {
+//     const result = [];
+
+//     function traverse(currentNode) {
+//         if (!currentNode) return;
+
+//         if (currentNode?.value) {
+//             result.push(currentNode?.value);
+//         }
+
+//         if (currentNode?.children) {
+//             for (const child of currentNode?.children) {
+//                 traverse(child);
+//             }
+//         }
+//     }
+
+//     traverse(node);
+//     return result;
+// }
+
+// console.log(getTreeValuesRecursive(tree));
