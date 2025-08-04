@@ -7,6 +7,23 @@ let words = ["banana", "grapefruit", "banana", "grapefruit", "banana", "orange",
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // SOLUTION
 
 const sortArr = Object.entries(
@@ -20,6 +37,8 @@ const sortArr = Object.entries(
   .map((item) => item[0]);
 
 // console.log(sortArr);
+
+
 
 
 
@@ -52,6 +71,17 @@ const sortArrByMap = (arr) => {
 // CONDITION
 // Write func that returns only array from nums that were repeat in inittial array
 // [1,2,3,4,2,3,2] => [2,3]
+
+
+
+
+
+
+
+
+
+
+
 
 
 
