@@ -7,6 +7,35 @@
 
 // console.log(myMap([1, 2, 3, 4, 5], (el) => el * 2));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // SOLUTION
 
 // function myMap<T>(arr: T[], callback: (item: T, index: number, arr: T[]) => T) {
