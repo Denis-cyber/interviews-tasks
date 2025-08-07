@@ -40,3 +40,17 @@
 // var o = new Constructor();
 
 // console.log(o.__proto__ === Constructor.prototype);
+
+// 5 CONDITION 5
+
+// let x = 1;
+
+// const logToConsole = function () {
+//   console.log(x);
+// };
+
+// x = 2;
+
+// logToConsole();
+
+// x = 3;

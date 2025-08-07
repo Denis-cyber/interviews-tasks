@@ -1,23 +1,6 @@
 // 1 CONDITION
 // What will be on console?
 
-// let x = 1;
-
-// const logToConsole = function () {
-//   console.log(x);
-// };
-
-// x = 2;
-
-// logToConsole();
-
-// x = 3;
-
-// SOLUTION 2
-
-// 2 CONDITION
-// What will be on console?
-
 // function makeCounter(count) {
 //   return function () {
 //     return count++;
@@ -33,7 +16,7 @@
 // console.log(counter2());
 // console.log(counter2());
 
-// 3 CONDITION
+// 2 CONDITION
 // What will be on console?
 
 // function createIncrement() {
@@ -63,7 +46,7 @@
 //     console.log(message);
 //   }
 
-// 4 CONDITION
+// 3 CONDITION
 
 // Write function sum that will summary args
 
