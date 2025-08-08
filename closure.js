@@ -1,5 +1,5 @@
 // 1 CONDITION
-// What will be on console?
+// What will be in console?
 
 // function makeCounter(count) {
 //   return function () {
@@ -16,8 +16,21 @@
 // console.log(counter2());
 // console.log(counter2());
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 2 CONDITION
-// What will be on console?
+// What will be in console?
 
 // function createIncrement() {
 //   let count = 0;
@@ -39,12 +52,52 @@
 // increment();
 // log();
 
+
+
+
+
+
+
+
+
+
+
+
 // SOLUTION Count is 0 Why? How to fix it?
 
 //   function log() {
 //     let message = `Count is ${count}`;
 //     console.log(message);
 //   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 3 CONDITION
 
@@ -53,6 +106,47 @@
 // console.log(sum()); // 0
 // console.log(sum(1)(2)()); // 3
 // console.log(sum(1)(2)(3)()); // 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // SOLUTION
 
