@@ -13,6 +13,37 @@ setTimeout(() => {
 Promise.resolve().finally(() => console.log(6));
 console.log(7);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // TASK 2
 // CONDITION
 
@@ -38,6 +69,37 @@ promise1.then(console.log);
 promise2.then(console.log);
 
 console.log(7);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // TASK 3
 // CONDITION
