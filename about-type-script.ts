@@ -1,7 +1,7 @@
 // 1) difference between 'any' and 'unknow'
 
-let vAny: any = 10; // We can assign anything to any
-let vUnknown: unknown = 10; // We can assign anything to unknown just like any
+let vAny: any; // We can assign anything to any
+let vUnknown: unknown; // We can assign anything to unknown just like any
 
 let s1: string = vAny; // Any is assignable to anything
 let s2: string = vUnknown; // Invalid; we can't assign vUnknown to any other type (without an explicit assertion)
@@ -10,30 +10,179 @@ let s2: string = vUnknown; // Invalid; we can't assign vUnknown to any other typ
 vAny.method(); // Ok; anything goes with any
 vUnknown.method(); // Not ok; we don't know anything about this variable
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+// unknown - это "безопасная" альтернатива any
+// в случае с unknown TypeScript требует провести проверку типа перед использованием значения:
+
+let b: unknown;
+
+b = 5;
+b = "строка";
+
+// Ошибка:
+// b.toUpperCase(); ❌ — нельзя использовать, не проверив тип
+
+if (typeof b === "string") {
+  b.toUpperCase(); // ✅ теперь можно
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 2) Try to type func getProperty to get Error on the second call this func ===>>> getProperty(X 'm') <=== cauze we don't have key 'm' on obj X
 
-// const x = { a: 1, b: 2, c: 3, d: 4 };
+const x = { a: 1, b: 2, c: 3, d: 4 };
 
-// function getProperty(obj, key) {
-//     return obj[key]
-// }
+function getProperty(obj, key) {
+    return obj[key]
+}
 
-// getProperty(x, 'a')
-// getProperty(x, 'm')
+getProperty(x, 'a')
+getProperty(x, 'm')
 
-// Answear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
 
 // function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
 //     return obj[key]
 // }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 3) What type will be in T1 and in T2
 
-// const a = {
-//     x: 1,
-//     y: '2'
-// }
+const a = {
+    x: 1,
+    y: '2'
+}
 
-// type T1 = typeof a
+type T1 = typeof a
 
-// type T2 = keyof T1
+type T2 = keyof T1
