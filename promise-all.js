@@ -44,8 +44,6 @@
 
 
 
-
-
 // SOLUTION 1
 
 // const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
@@ -142,4 +140,81 @@
 //         .catch((err) => reject(err));
 //     }
 //   });
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CONDITION 3
+// Rewrite your PromiseAll with saving index of each promise
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION 
+
+// function myPromiseAll(promises) {
+//     const res = [];
+//     let completed = 0;
+//     const promisesLength = promises.length;
+
+//     return new Promise((resolve, reject) => {
+//         if (promisesLength === 0) {
+//             resolve([]);
+//         }
+
+//         for (let i = 0; i < promisesLength; i++) {
+//             promises[i]
+//                 .then((value) => {
+//                     res[i] = value; // сохранить результат по индексу
+//                     completed++;
+
+//                     if (completed === promisesLength) {
+//                         resolve(res);
+//                     }
+//                 })
+//                 .catch((err) => reject(err));
+//         }
+//     });
 // }
