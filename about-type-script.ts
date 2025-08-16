@@ -99,8 +99,8 @@ function getProperty(obj, key) {
     return obj[key]
 }
 
-getProperty(x, 'a')
-getProperty(x, 'm')
+getProperty(x, 'a');
+getProperty(x, 'm');
 
 
 
