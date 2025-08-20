@@ -2,6 +2,79 @@
 
 // Should write throttle hook for optimization button clicks
 
+
+// export default function App() {
+//   const [day, setDay] = useState<number>(19122023);
+
+//   const handleClick = () => setDay(Date.now());
+
+//   useEffect(() => {
+//     console.log(day); // fetching
+//   }, [day])
+
+//   return (
+//     <>
+//       <div>{day}</div>
+//       <button onClick={handleClick}>Set day</button>
+//     </>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import { useState, useRef, useCallback } from "react";
 
 // export default function App() {
