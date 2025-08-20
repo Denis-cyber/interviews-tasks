@@ -1,6 +1,66 @@
 // CONDITION
 // Write redux on pure js?
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+
 // const createStore = (paramRootReducer, paramInitialState) => {
 //   let state = paramRootReducer(paramInitialState, { type: "__INIT__" });
 //   const subscribers = [];
