@@ -14,3 +14,6 @@ write map function (first on pure js, then with ts)
 
 - promise-all.js
 myPromiseAll (with save order)
+
+- micro-macro-tasks.js
+last (task 3)
