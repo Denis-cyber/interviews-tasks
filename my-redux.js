@@ -104,7 +104,7 @@
 // store.dispatch({ type: "INIT_COUNTER" });
 // store.dispatch({ type: "INCREMENT" });
 // store.dispatch({ type: "INCREMENT" });
-// store.dispatch({ type: "INCREMENT" }); // not in console;
+// store.dispatch({ type: "INCREMENT" }); // in console;
 // unsubscribe();
 // store.dispatch({ type: "INCREMENT" });
 // store.dispatch({ type: "INCREMENT" }); // not in console;
