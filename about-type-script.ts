@@ -186,3 +186,91 @@ const a = {
 type T1 = typeof a
 
 type T2 = keyof T1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 4) Write ReadOnlyOwn which will make all keys readonly
+
+// type User = {
+//   id: number;
+//   name: string;
+// };
+
+// type ReadonlyUser = ReadOnlyOwn<User>;
+
+// const user: ReadonlyUser = {
+//   id: 1,
+//   name: 'Alice'
+// };
+
+// user.id = 2;  // error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+
+// type ReadOnlyOwn<T> = { readonly [K in keyof T]: T[K] };
+
+// type User = {
+//   id: number;
+//   name: string;
+// };
+
+// type ReadonlyUser = ReadOnlyOwn<User>;
+
+// const user: ReadonlyUser = {
+//   id: 1,
+//   name: 'Alice'
+// };
+
+// user.id = 2;  // error
