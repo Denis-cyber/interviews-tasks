@@ -4,9 +4,9 @@
 
 
 // export default function App() {
-//   const [day, setDay] = useState<number>(19122023);
+//   const [day, setDay] = useState<number>(0);
 
-//   const handleClick = () => setDay(Date.now());
+//   const handleClick = () => setDay(prev => prev + 1);
 
 //   useEffect(() => {
 //     console.log(day); // fetching
