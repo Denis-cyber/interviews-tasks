@@ -308,7 +308,7 @@ type T2 = keyof T1
 
 
 
-// 4) Write RequiredOwn which will make all keys required  
+// 5) Write RequiredOwn which will make all keys required  
 // MAPPED TYPES (Required)
 
 // type User = {
@@ -370,3 +370,34 @@ type T2 = keyof T1
 // const user: RequiredUser = { // error
 //   id: 1,
 // };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  6) Write something of DeepReadonly<T> / DeepPartial<T> / DeepMutable<T> for
+//  DeepReadonly<T> - makes all properties and nested objects 'readonly'
+//  DeepPartial<T> - makes all properties and nested objects optional
+//  DeepMutable<T> - removes 'readonly' from all levels of nesting
+
