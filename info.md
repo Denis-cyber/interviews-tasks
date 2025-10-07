@@ -1,7 +1,7 @@
 weaknesses
 
 - about-type-script.ts
-keyof K
+all in file
 
 - binary-tree.js
 recursive method
