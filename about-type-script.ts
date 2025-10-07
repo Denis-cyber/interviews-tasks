@@ -207,7 +207,8 @@ type T2 = keyof T1
 
 
 
-// 4) Write ReadOnlyOwn which will make all keys readonly
+// 4) Write ReadOnlyOwn which will make all keys readonly.  
+// MAPPED TYPES (Readonly)
 
 // type User = {
 //   id: number;
@@ -259,7 +260,7 @@ type T2 = keyof T1
 
 // SOLUTION
 
-// type ReadOnlyOwn<T> = { readonly [K in keyof T]: T[K] };
+// type ReadOnlyOwn<T> = { readonly [K in keyof T]: T[K] };   
 
 // type User = {
 //   id: number;
@@ -274,3 +275,98 @@ type T2 = keyof T1
 // };
 
 // user.id = 2;  // error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 4) Write RequiredOwn which will make all keys required  
+// MAPPED TYPES (Required)
+
+// type User = {
+//   id?: number;
+//   name?: string;
+// };
+
+// type RequiredUser = RequiredOwn<User>;
+
+// const user: RequiredUser = { // error
+//   id: 1,
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+
+// type RequiredOwn<T> = {[K in keyof T]-?: T[K]}
+
+// type User = {
+//   id?: number;
+//   name?: string;
+// };
+
+// type RequiredUser = RequiredOwn<User>;
+
+// const user: RequiredUser = { // error
+//   id: 1,
+// };
