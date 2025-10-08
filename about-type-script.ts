@@ -396,8 +396,28 @@ type T2 = keyof T1
 
 
 
-//  6) Write something of DeepReadonly<T> / DeepPartial<T> / DeepMutable<T> for
+//  6) Write something of DeepReadonly<T>
 //  DeepReadonly<T> - makes all properties and nested objects 'readonly'
-//  DeepPartial<T> - makes all properties and nested objects optional
-//  DeepMutable<T> - removes 'readonly' from all levels of nesting
+
+// type User = {
+//   id: number;
+//   name: string;
+//   object: {
+//     age: number,
+//     city: string,
+//   }
+// };
+
+// type DeepReadonlyUser = DeepReadonly<User>;
+
+// const user: DeepReadonlyUser = {
+//   id: 1,
+//   name: 'string',
+//   object: {
+//     age: 2,
+//     city: 'Minsk',
+//   },
+// };
+
+// user.object.age = 15; // error
 
