@@ -421,3 +421,63 @@ type T2 = keyof T1
 
 // user.object.age = 15; // error
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+
+// type DeepReadonly<T> = {
+//   readonly [K in keyof T]: T[K] extends object
+//     ? T[K] extends Function
+//       ? T[K]
+//       : DeepReadonly<T[K]>
+//     : T[K];
+// };
+
+// type User = {
+//   id: number;
+//   name: string;
+//   object: {
+//     age: number,
+//     city: string,
+//   }
+// };
+
+// type DeepReadonlyUser = DeepReadonly<User>;
+
+// const user: DeepReadonlyUser = {
+//   id: 1,
+//   name: 'string',
+//   object: {
+//     age: 2,
+//     city: 'Minsk',
+//   },
+// };
+
+// user.object.age = 15; // error
