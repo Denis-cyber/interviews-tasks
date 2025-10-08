@@ -1,5 +1,6 @@
 // CONDITION
 // should write a timer on react with using useState and useEffect
+// add btn 'Reset' with resetting seconds and timer working
 
 // export default function App() {
 //
@@ -86,6 +87,10 @@
 
 //       <button onClick={() => setIsTumerRun(true)}>Start</button>
 //       <button onClick={() => setIsTumerRun(false)}>Stop</button>
+        //  <button onClick={() => {
+        //     setSeconds(0);
+        //     setIsTumerRun(false);
+        //  }}>Reset</button>
 //     </div>
 //   );
 // }
