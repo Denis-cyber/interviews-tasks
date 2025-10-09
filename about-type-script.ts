@@ -222,7 +222,7 @@ type T2 = keyof T1
 //   name: 'Alice'
 // };
 
-// user.id = 2;  // error
+// user.id = 2;  // error (because readonly property)
 
 
 
@@ -318,7 +318,7 @@ type T2 = keyof T1
 
 // type RequiredUser = RequiredOwn<User>;
 
-// const user: RequiredUser = { // error
+// const user: RequiredUser = { // error, there is no field "name")
 //   id: 1,
 // };
 
@@ -419,7 +419,7 @@ type T2 = keyof T1
 //   },
 // };
 
-// user.object.age = 15; // error
+// user.object.age = 15; // error, "age" - readonly too
 
 
 
