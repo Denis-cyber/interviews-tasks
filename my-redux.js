@@ -99,12 +99,12 @@
 //   }
 // };
 
-// const store = createStore(rootReducer, 0);
-// const unsubscribe = store.subscribe(() => console.log("store: ", store.getState()));
-// store.dispatch({ type: "INIT_COUNTER" });
-// store.dispatch({ type: "INCREMENT" });
-// store.dispatch({ type: "INCREMENT" });
-// store.dispatch({ type: "INCREMENT" }); // in console;
+// const { dispatch, subscribe, getState } = createStore(rootReducer, 0);
+// const unsubscribe = subscribe(() => console.log("store: ", getState()));
+// dispatch({ type: "INIT_COUNTER" });
+// dispatch({ type: "INCREMENT" });
+// dispatch({ type: "INCREMENT" });
+// dispatch({ type: "INCREMENT" }); // in console;
 // unsubscribe();
-// store.dispatch({ type: "INCREMENT" });
-// store.dispatch({ type: "INCREMENT" }); // not in console;
+// dispatch({ type: "INCREMENT" });
+// dispatch({ type: "INCREMENT" }); // not in console;
