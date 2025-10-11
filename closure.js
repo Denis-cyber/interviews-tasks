@@ -11,7 +11,6 @@
 // let counter2 = makeCounter(0);
 
 // console.log(counter());
-// test string
 // console.log(counter());
 
 // console.log(counter2());
