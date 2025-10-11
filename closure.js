@@ -11,23 +11,11 @@
 // let counter2 = makeCounter(0);
 
 // console.log(counter());
+// test string
 // console.log(counter());
 
 // console.log(counter2());
 // console.log(counter2());
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // 2 CONDITION
 // What will be in console?
@@ -52,52 +40,12 @@
 // increment();
 // log();
 
-
-
-
-
-
-
-
-
-
-
-
 // SOLUTION Count is 0 Why? How to fix it?
 
 //   function log() {
 //     let message = `Count is ${count}`;
 //     console.log(message);
 //   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // 3 CONDITION
 
@@ -106,47 +54,6 @@
 // console.log(sum()); // 0
 // console.log(sum(1)(2)()); // 3
 // console.log(sum(1)(2)(3)()); // 6
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // SOLUTION
 
