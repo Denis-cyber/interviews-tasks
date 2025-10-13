@@ -136,6 +136,70 @@
 
 // SOLUTION Count is 0 Why? How to fix it?
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //   function log() {
 //     let message = `Count is ${count}`;
 //     console.log(message);
