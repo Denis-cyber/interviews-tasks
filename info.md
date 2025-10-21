@@ -18,4 +18,4 @@ myPromiseAll (with save order)
 - micro-macro-tasks.js
 last (task 3)
 
-- next time: redux / sorting / permutation
+- next time: redux
