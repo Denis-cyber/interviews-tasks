@@ -33,3 +33,90 @@
 // }
 
 // export pleaseReviewMe;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+
+// @ts-nocheck
+
+// import React, { useState, useEffect } from "react";
+// import sendMetric from "metrics";
+// import sendData from "data";
+// import bigComputations from "utils";
+
+// const [items] = [{ id: 1 }, { id: 2 }, { id: 3 }];
+
+// const handleMetrics = () => sendMetric("click");
+
+// export const PleaseReviewMe = ({ argument }) => {
+//   const [data] = useState(() => bigComputations(argument));
+
+//   useEffect(() => {
+//     document.addEventListener("click", handleMetrics);
+
+//     return () => document.removeEventListener("click", handleMetrics);
+//   }, []);
+
+//   const handleClick = (id) => {
+//     sendData(data, id);
+//   };
+
+//   return (
+//     <ul>
+//       {items.map(({ id }) => (
+//         <li key={id} onClick={() => handleClick(id)}>
+//           {id}
+//         </li>
+//       ))}
+//     </ul>
+//   );
+// };
