@@ -1,6 +1,6 @@
 weaknesses
 
-- about-type-script.ts
+- about-type-script.ts (attention)
 all in file
 
 - binary-tree.js
