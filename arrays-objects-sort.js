@@ -1,8 +1,8 @@
 // TASK 1
 // CONDITION
-// Write function that return ['banana', 'grapefruit', 'orange'] because banana was 3 times in array, grapefruit - 2 and ...
+// Write function that return ['grapefruit', 'banana', 'orange'] because grapefruit was 3 times in array, banana - 2 and orange - 1.
 
-let words = ["grapefruit", "grapefruit", "grapefruit", "banana", "orange", "banana"];
+let words = ["orange", "grapefruit", "grapefruit", "grapefruit", "banana", "banana"];
 
 
 
