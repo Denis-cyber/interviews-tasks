@@ -219,3 +219,94 @@
 //         }
 //     });
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CONDITION 4
+// Rewrite your PromiseAll with using async / await
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+
+// async function myAsyncAwait(promises) {
+//     const result = [];
+//     const promisesLength = promises.length;
+//     let completed = 0;
+
+//     return new Promise((resolve, reject) => {
+//         for (let i = 0; i < promisesLength; i++) {
+//             (async () => {
+//                 try {
+//                     const value = await promises[i];
+//                     result[i] = value;
+//                     completed++;
+//                     if (completed === promisesLength) {
+//                         resolve(result);
+//                     }
+//                 } catch (err) {
+//                     reject(err);
+//                 }
+//             })(); // IIFE — сразу вызываем async-функцию
+//         }
+//     });
+// }
+
+
+// promiseAllByAsyncAwait([fetch1(), fetch2()]).then(console.log)
