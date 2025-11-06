@@ -481,3 +481,136 @@ type T2 = keyof T1
 // };
 
 // user.object.age = 15; // error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 7) CONDITION
+
+// type User = {
+//   name: string;
+// }
+
+// type Manager = {
+//   name: string;
+//   token: string;
+// }
+
+// function login(user: Manager | User) {
+//   console.log(user.name);
+
+//   console.log(user.token); // fix this error
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+
+// type User = {
+//   name: string;
+// }
+
+// type Manager = {
+//   name: string;
+//   token: string;
+// }
+
+// function login(user: Manager | User) {
+//   console.log(user.name);
+
+//   if ('token' in user) {
+//     console.log(user.token);
+//   }
+// }
