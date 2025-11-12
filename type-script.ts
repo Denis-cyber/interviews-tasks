@@ -689,3 +689,95 @@ type T2 = keyof T1
 
 
 // type MyPick<T, K extends keyof T> = { [P in K]: T[P] }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 9
+
+// type Status = 'new' | 'waiting_load' | 'in_work' | 'done' | 'cert_ready';
+
+
+// // Преобразуем каждый элемент типа Status в строку с квадратными скобками
+// type StatusWithBrackets = Status;
+
+// const val: StatusWithBrackets = '[waiting_load]';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+
+
+// type Status = 'new' | 'waiting_load' | 'in_work' | 'done' | 'cert_ready';
+
+
+// // Преобразуем каждый элемент типа Status в строку с квадратными скобками
+// type StatusWithBrackets = `[${Status}]`;
+
+// const val: StatusWithBrackets = '[waiting_load]';
