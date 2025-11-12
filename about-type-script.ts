@@ -1,97 +1,4 @@
-// 1) difference between 'any' and 'unknow'
-
-let vAny: any; // We can assign anything to any
-let vUnknown: unknown; // We can assign anything to unknown just like any
-
-let s1: string = vAny; // Any is assignable to anything
-let s2: string = vUnknown; // Invalid; we can't assign vUnknown to any other type (without an explicit assertion)
-// To fix it - we need to write 'as string' ===>>> let s2: string = vUnknown as string
-
-vAny.method(); // Ok; anything goes with any
-vUnknown.method(); // Not ok; we don't know anything about this variable
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// SOLUTION
-// unknown - это "безопасная" альтернатива any
-// в случае с unknown TypeScript требует провести проверку типа перед использованием значения:
-
-let b: unknown;
-
-b = 5;
-b = "строка";
-
-// Ошибка:
-// b.toUpperCase(); ❌ — нельзя использовать, не проверив тип
-
-if (typeof b === "string") {
-  b.toUpperCase(); // ✅ теперь можно
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// 2) Try to type func getProperty to get Error on the second call this func ===>>> getProperty(X 'm') <=== cauze we don't have key 'm' on obj X
+// 1) Try to type func getProperty to get Error on the second call this func ===>>> getProperty(X 'm') <=== cauze we don't have key 'm' on obj X
 
 const x = { a: 1, b: 2, c: 3, d: 4 };
 
@@ -176,7 +83,7 @@ getProperty(x, 'm');
 
 
 
-// 3) What type will be in T1 and in T2
+// 2) What type will be in T1 and in T2
 
 const a = {
     x: 1,
@@ -207,7 +114,7 @@ type T2 = keyof T1
 
 
 
-// 4) Write ReadOnlyOwn which will make all keys readonly.  
+// 3) Write ReadOnlyOwn which will make all keys readonly.  
 // MAPPED TYPES (Readonly)
 
 // type User = {
@@ -308,7 +215,7 @@ type T2 = keyof T1
 
 
 
-// 5) Write RequiredOwn which will make all keys required  
+// 4) Write RequiredOwn which will make all keys required  
 // MAPPED TYPES (Required)
 
 // type User = {
@@ -396,7 +303,7 @@ type T2 = keyof T1
 
 
 
-//  6) Write something of DeepReadonly<T>
+//  5) Write something of DeepReadonly<T>
 //  DeepReadonly<T> - makes all properties and nested objects 'readonly'
 
 // type User = {
@@ -531,7 +438,7 @@ type T2 = keyof T1
 
 
 
-// 7) CONDITION
+// 6) CONDITION
 
 // type User = {
 //   name: string;
