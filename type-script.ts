@@ -1,13 +1,13 @@
 // 1) Try to type func getProperty to get Error on the second call this func ===>>> getProperty(X 'm') <=== cauze we don't have key 'm' on obj X
 
-const x = { a: 1, b: 2, c: 3, d: 4 };
+// const x = { a: 1, b: 2, c: 3, d: 4 };
 
-function getProperty(obj, key) {
-    return obj[key]
-}
+// function getProperty(obj, key) {
+//     return obj[key]
+// }
 
-getProperty(x, 'a');
-getProperty(x, 'm');
+// getProperty(x, 'a');
+// getProperty(x, 'm');
 
 
 
