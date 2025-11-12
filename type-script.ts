@@ -521,3 +521,86 @@ type T2 = keyof T1
 //     console.log(user.token);
 //   }
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 7) Omit
+
+// type MyOmit = {
+
+// }
+
+// interface Person {
+//   name: string;
+//   age: number;
+//   address: string;
+// }
+
+// // Удалим 'age' из интерфейса Person
+// type PersonWithoutAge = MyOmit<Person, 'age'>;
+
+// const person: PersonWithoutAge = {
+//   name: 'John',
+//   address: '123 Main St',
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+
+
+// type MyOmit<T, K extends keyof T> = {[P in Exclude<keyof T, K>]: T[P]}
