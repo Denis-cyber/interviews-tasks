@@ -604,3 +604,88 @@ type T2 = keyof T1
 
 
 // type MyOmit<T, K extends keyof T> = {[P in Exclude<keyof T, K>]: T[P]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 8) Pick
+
+// type MyPick = {
+    
+// }
+
+// interface Person {
+//   name: string;
+//   age: number;
+//   address: string;
+// }
+
+// // Теперь мы используем наш собственный MyPick
+// type PersonNameAndAddress = MyPick<Person, 'name' | 'address'>;
+
+// const person: PersonNameAndAddress = {
+//   name: 'John',
+//   address: '123 Main St',
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION
+
+
+// type MyPick<T, K extends keyof T> = { [P in K]: T[P] }
