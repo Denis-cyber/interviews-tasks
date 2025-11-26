@@ -29,5 +29,3 @@ Notes for future:
 2. Write sort function;
 
 3. own PromiseAllSettled
-
-4. task about brackets pairs
