@@ -310,3 +310,123 @@
 
 
 // promiseAllByAsyncAwait([fetch1(), fetch2()]).then(console.log)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CONDITION 5
+// Write your Promise.allSettled 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SOLUTION 
+
+// function myPromiseAllSettled(promises) {
+//     const res = [];
+//     let completed = 0;
+//     const promisesLength = promises.length;
+
+//     return new Promise((resolve) => {
+//         if (promisesLength === 0) {
+//             resolve([]);
+//         }
+
+//         for (let i = 0; i < promisesLength; i++) {
+//             Promise.resolve(promises[i])
+//                 .then((value) => {
+//                     res[i] = {
+//                         status: "fulfilled",
+//                         value,
+//                     };
+//                 })
+//                 .catch((reason) => {
+//                     res[i] = {
+//                         status: "rejected",
+//                         reason,
+//                     };
+//                 })
+//                 .finally(() => {
+//                     completed++;
+
+//                     if (completed === promisesLength) {
+//                         resolve(res);
+//                     }
+//                 });
+//         }
+//     });
+// }
