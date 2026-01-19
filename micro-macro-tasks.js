@@ -132,3 +132,50 @@ console.log(4);
 setTimeout(() => {
   console.log("timeOut2");
 }, 0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// TASK 4 (Dima)
+// CONDITION
+
+// In what order are the numbers displayed in the console?
+
+function fn() {
+  console.log('Promise result');
+  Promise.resolve().then(fn);
+}
+
+setTimeout(() => {
+  console.log('setTimeout result');
+}, 0)
+
+fn();
