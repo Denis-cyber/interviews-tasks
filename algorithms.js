@@ -154,3 +154,47 @@ console.log(reverse(['t', 'o', 'p', 's', 'k','y'])); // ['y', 'k', 's', 'p', 'o'
 
 //     return arr;
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// solution 4 (like 3rd, but with destructuring)
+
+// function reverse (arr) {
+//     const iterationNumber = Math.floor(arr.length / 2);
+
+//     for (let i = 0; i < iterationNumber; i++) {
+//         [arr[i], arr[arr.length - i - 1]] = [arr[arr.length - i - 1], arr[i]]
+//     }
+
+//     return arr;
+// }
