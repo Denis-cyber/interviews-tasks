@@ -1,7 +1,7 @@
 // condition
 
 const findMaxString = (s) => {
-    // code
+    // code;
 }
 
 console.log(findMaxString('aaa bbbbb cc')); // 5
@@ -102,3 +102,24 @@ console.log(findMaxString('a bbb ccc dd')); // 3
 
 
 // solution hard (with 1 iteration)
+
+// const findMaxString = (s) => {
+//     let max = 0;
+//     let counter = 0;
+
+//     for (let i = 0; i <= s.length; i++) {
+//         if (s[i] === ' ' || s[i] === s[s.length - 1]) {
+//             if (counter > max) {
+//                 max = counter;
+//                 counter = 0;
+//             } else {
+//                 counter = 0;
+//             }
+
+//         } else {
+//             counter++;
+//         }
+//     }
+
+//     return max;
+// }
