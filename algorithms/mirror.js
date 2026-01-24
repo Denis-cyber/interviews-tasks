@@ -66,19 +66,11 @@ console.log(mirror([1, 2, 3], [3, 2, 1, 0]));// false
 
 //     if (arr1.length !== arr2.length) return false;
 
-//     const iterationNumber = arr1.length;
-//     let counterFromLastIndex = iterationNumber - 1;
-
-//     for (let i = 0; i < iterationNumber; i++) {
-//         if (arr1[i] !== arr2[counterFromLastIndex]) {
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (arr1[i] !== arr2[arr1.length - 1 - i]) {
 //             return false
 //         }
-
-//         counterFromLastIndex--;
-
-//         if (i === iterationNumber - 1) {
-//             return true
-//         }
 //     }
-    
+
+//     return true;
 // }
